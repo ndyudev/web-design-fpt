@@ -6,7 +6,8 @@
     box-sizing: border-box;
 }
 
-.content p {
-    width: 150px;
+
+.content img {
     float: left;
+    width: 150px;
 }

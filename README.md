@@ -38,7 +38,7 @@ Dự án này được thực hiện nhằm mục đích lưu trữ các cấu t
 - [Hướng dẫn sử dụng Git](https://git-scm.com/doc)
 
 ## Liên hệ
-Nếu bạn có bất kỳ câu hỏi nào, hãy liên hệ với tôi qua email: [your_email@example.com](mailto:your_email@example.com).
+Nếu bạn có bất kỳ câu hỏi nào, hãy liên hệ với tôi qua email: chauunhatduyyit@gmail.com
 
 ## Giấy phép
 Dự án này không có giấy phép cụ thể. Vui lòng tham khảo các tài liệu liên quan để biết thêm chi tiết.

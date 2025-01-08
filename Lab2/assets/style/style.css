@@ -1,0 +1,17 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+}
+
+
+.album img {
+    width: 140px;
+    height: 140px;
+}
+

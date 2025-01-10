@@ -1,0 +1,28 @@
+/* Reset CSS */
+ * {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+ }
+
+.doan1 {
+    color: red;
+}
+
+.doan2 {
+    color: blue;
+}
+
+.doan3 {
+    color: green;
+}
+
+strong {
+    color: brown;
+}
+
+hr {
+    border: none;
+}

@@ -1,0 +1,43 @@
+/* Reset CSS */
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.content {
+    font-variant: small-caps;
+    font-size: 20px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.heading {
+    color: white;
+    text-shadow: 0 0 5px red;
+    margin-bottom: 20px;
+}
+
+.doan1 {
+    margin-bottom: 20px;
+    color: red;
+}
+
+.doan2 {
+    margin-bottom: 20px;
+    color: blue;
+}
+
+.doan3 {
+    color: green;
+}
+
+strong {
+    color: brown;
+}

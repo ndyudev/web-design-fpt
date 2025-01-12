@@ -1,0 +1,21 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+}
+
+.menu a {
+    font-variant: small-caps;
+    text-decoration: none;
+    color: blue;
+}
+
+.menu a:active {
+    color: green;
+}
+
+.menu a:hover {
+    color: red;
+}

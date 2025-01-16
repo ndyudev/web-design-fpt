@@ -1,0 +1,81 @@
+/* Reset mặc định */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container > header {
+    background-image: url('/Lab6/Cau1/img/fptbanner.jpg');
+    background-size: 100% 100%;
+    height: 0;
+    padding-bottom: 30%;
+}
+
+.container > nav {
+    line-height: 40px;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.container > nav > a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.container > nav > a:hover {
+    color: yellow;
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+.container > article {
+    min-height: 400px;
+    width: 75%;
+    background-color: white;
+    float: left;
+}
+
+.container > aside {
+    min-height: 400px;
+    width: 25%;
+    background-color: lightgray;
+    float: right;
+}
+
+aside ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: red;
+    
+}
+
+.container > footer {
+    border-top: 5px double orangered;
+    line-height: 50px;
+    background-color: lightcyan;
+    text-align: center;
+    font-variant: small-caps;
+    clear: both;
+}
+
+.iframe-content {
+    width: 100%;
+    height: 100%;
+    border: none;
+    min-height: 400px;
+}

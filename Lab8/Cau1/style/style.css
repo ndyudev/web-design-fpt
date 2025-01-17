@@ -1,0 +1,52 @@
+/* Reset CSS */
+* {
+    pad: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu > ul {
+    background-color: orange;
+    text-align: center;
+}
+
+.menu > ul > li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu > ul > li > a:hover {
+    color: #fff;
+    background-color: orangered;
+}
+
+.menu ul ul {
+    position: absolute;
+    /* list-style: none; */
+    display: none;
+    /* background-color: rgb(248, 3, 3); */
+    text-align: left;
+}
+
+.menu > ul > li:hover > ul {
+    display: block;
+}
+
+.menu > ul > li > ul {
+    list-style: none;
+    text-align: left;
+}
+
+.menu ul ul li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    background-color: red;
+}
+

@@ -1,195 +1,213 @@
-/* Body */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #FFF5E1;
     margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
     color: #333;
-    overflow-x: hidden; /* Tránh tràn ngang */
+    background-color: #fcefe2; /* Tông màu sáng ấm áp */
 }
 
 /* Header */
-header {
-    background: linear-gradient(45deg, #FF4D4D, #FFC107);
-    color: white;
-    text-align: center;
-    padding: 20px 10px;
-    position: relative;
+.header {
+    background-color: #d32f2f; /* Màu đỏ chủ đạo */
+    color: #fff;
 }
 
-header .logo {
-    width: 80px;
-    border-radius: 50%;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    margin: 10px 0 5px;
-}
-
-header p {
-    font-size: 1.2rem;
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
     margin: 0;
 }
 
-nav {
-    margin-top: 15px;
+.menu li {
+    position: relative;
 }
 
-nav a {
-    color: white;
+.menu li a {
     text-decoration: none;
-    margin: 0 10px;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 5px 15px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
     transition: background-color 0.3s ease;
 }
 
-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+.menu li a:hover {
+    background-color: #ffcc00; /* Màu vàng Tết */
+    color: #d32f2f;
 }
 
-/* Product Section */
+/* Submenu */
+.has-submenu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #d32f2f;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu li a {
+    padding: 10px 20px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: #ffcc00;
+    color: #d32f2f;
+}
+
+/* Slider */
+.slider {
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: #ffd54f; /* Màu vàng đậm */
+}
+
+.banner-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff8e1; /* Nền vàng nhạt */
+}
+
+.about h1 {
+    color: #d32f2f;
+    font-size: 2.5em;
+}
+
+.about p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.about .cta {
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.about .cta:hover {
+    background-color: #ffcc00;
+    color: #d32f2f;
+}
+
+/* Products Section */
 .products {
     padding: 40px 20px;
+    background-color: #fff;
     text-align: center;
 }
 
 .products h2 {
-    font-size: 2.5rem;
-    color: #FF4D4D;
-    margin-bottom: 30px;
+    color: #d32f2f;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.product-grid {
+.product-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-.product {
-    background: white;
+.product-item {
+    border: 2px solid #ffcc00;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease;
+    padding: 20px;
+    background-color: #fff8e1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.product:hover {
-    transform: translateY(-10px);
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.product img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.product-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-.product h3 {
-    font-size: 1.5rem;
-    margin: 15px 0;
-    color: #FF4D4D;
+.product-item h3 {
+    color: #d32f2f;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-.product p {
-    font-size: 1rem;
-    color: #666;
-    margin: 0 10px 15px;
+.product-item p {
+    font-size: 1em;
+    margin-bottom: 15px;
 }
 
-.btn {
+.product-item button {
+    background-color: #d32f2f;
+    color: #fff;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
     cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.2s;
-    margin: 5px;
+    border-radius: 5px;
 }
 
-.primary-btn {
-    background-color: #FF4D4D;
-    color: white;
-}
-
-.primary-btn:hover {
-    background-color: #FFC107;
-    transform: scale(1.1);
-}
-
-.secondary-btn {
-    background-color: #FFC107;
-    color: white;
-}
-
-.secondary-btn:hover {
-    background-color: #FF4D4D;
-    transform: scale(1.1);
+.product-item button:hover {
+    background-color: #ffcc00;
+    color: #d32f2f;
 }
 
 /* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 30px 10px;
+.footer {
+    background-color: #d32f2f;
+    color: #fff;
     text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
 }
 
-.footer-container {
+.footer .subnav {
+    margin-bottom: 10px;
+}
+
+.footer .subnav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.footer-logo,
-.footer-links,
-.footer-socials {
-    flex: 1;
-    min-width: 200px;
-}
-
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    margin-bottom: 10px;
-}
-
-.footer-links a {
-    color: white;
+.footer .subnav ul li a {
     text-decoration: none;
+    color: #ffcc00;
+    font-size: 1em;
 }
 
-.footer-links a:hover {
+.footer .subnav ul li a:hover {
     text-decoration: underline;
-}
-
-.footer-bottom {
-    margin-top: 20px;
-    font-size: 0.9rem;
-    opacity: 0.8;
-}
-
-/* Hiệu ứng Tết */
-header::after {
-    content: "";
-    background: url('https://png.pngtree.com/png-clipart/20210223/ourmid/pngtree-single-branch-of-peach-blossom-png-image_2931836.jpg') no-repeat center;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    opacity: 0.2;
 }

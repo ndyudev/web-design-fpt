@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | DSV Shop</title>
+    <title>About | DSV Shop</title>
     <link rel="stylesheet" href="/ASM1/style/contact.css">
     <link rel="icon" href="/ASM1/img/DSVShop/LogoDSV.png">
 </head>
@@ -14,16 +14,16 @@
             <nav class="navbar">
                 <ul class="menu">
                     <li><a href="home.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li class="has-submenu">
                         <a href="products.html">Products</a>
                         <ul class="submenu">
-                            <li><a href="#laptop">Laptop</a></li>
-                            <li><a href="#iphone">iPhone</a></li>
-                            <li><a href="#accessory">Phụ kiện</a></li>
+                            <li><a href="#">Laptop</a></li>
+                            <li><a href="#">iPhone</a></li>
+                            <li><a href="#">Phụ kiện</a></li>
                         </ul>
                     </li>
-                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -31,36 +31,53 @@
                 <img src="/ASM1/img/DSVShop/banner.dsvshop.png" alt="Banner" class="banner-img">
             </div>
         </header>
-
+        <!-- About -->
         <section id="about" class="about">
             <div class="container">
-                <h2>Về DSV Shop</h2>
-                <p>DSV Shop là một cửa hàng trực tuyến chuyên cung cấp các sản phẩm công nghệ chất lượng cao như laptop, điện thoại, và phụ kiện. Chúng tôi cam kết mang đến cho khách hàng những sản phẩm tốt nhất với giá cả cạnh tranh.</p>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="image1.jpg" alt="Hình ảnh về chúng tôi">
+                <h2>Về <span class="highlight">DSV Shop</span></h2>
+                <p class="intro">
+                    DSV Shop tự hào là cửa hàng trực tuyến chuyên cung cấp các sản phẩm công nghệ như laptop, điện thoại và phụ kiện chất lượng cao. 
+                    Sứ mệnh của chúng tôi là mang lại sự hài lòng tối đa cho khách hàng với dịch vụ và sản phẩm tốt nhất.
+                </p>
+        
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="/ASM1/img/DSVShop/dsv-group.png" alt="Hình ảnh cửa hàng DSV Shop">
                     </div>
-                    <div class="col-md-6">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="about-description">
+                        <p>
+                            Chúng tôi không chỉ bán sản phẩm, mà còn mang đến giá trị và niềm tin. 
+                            Tất cả sản phẩm tại DSV Shop đều được chọn lọc kỹ càng nhằm đảm bảo chất lượng vượt trội, giúp khách hàng có trải nghiệm hoàn hảo.
+                        </p>
+                        <p>
+                            Với đội ngũ giàu kinh nghiệm và nhiệt huyết, chúng tôi luôn lắng nghe ý kiến và không ngừng cải thiện để phục vụ khách hàng tốt hơn mỗi ngày.
+                        </p>
+                        <button class="cta">Khám phá thêm</button>
                     </div>
                 </div>
-
+        
                 <div class="team">
                     <h2>Đội ngũ của chúng tôi</h2>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="team-member">
-                                <img src="member1.jpg" alt="Thành viên 1">
-                                <h3>Nguyễn Văn A</h3>
-                                <p>Giám đốc</p>
-                            </div>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <img src="/ASM1/img/DSVShop/" alt="Nguyễn Văn A">
+                            <h3>Nguyễn Văn A</h3>
+                            <p>Giám đốc điều hành</p>
                         </div>
+                        <div class="team-member">
+                            <img src="/ASM1/img/DSVShop/" alt="Trần Thị B">
+                            <h3>Trần Thị B</h3>
+                            <p>Trưởng phòng kinh doanh</p>
                         </div>
+                        <div class="team-member">
+                            <img src="/ASM1/img/DSVShop/" alt="Lê Văn C">
+                            <h3>Lê Văn C</h3>
+                            <p>Chuyên gia công nghệ</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </section>        
 
         <!-- FOOTER -->
         <footer class="footer">

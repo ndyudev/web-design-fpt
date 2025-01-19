@@ -73,7 +73,7 @@ body {
     max-width: 100%;
     overflow: hidden;
     text-align: center;
-    background-color: #ffd54f; /* Màu vàng đậm */
+    background-color: #ffd54f;
 }
 
 .banner-img {
@@ -83,37 +83,77 @@ body {
 
 /* About Section */
 .about {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #fff8e1; /* Nền vàng nhạt */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.about-content {
+    flex: 1;
 }
 
 .about h1 {
-    color: #d32f2f;
-    font-size: 2.5em;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-.about p {
-    margin: 10px 0;
-    font-size: 1.1em;
+.about .highlight {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.about .tagline {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about .description {
+    font-size: 1rem;
+    color: #666;
     line-height: 1.6;
+    margin-bottom: 30px;
 }
 
 .about .cta {
-    background-color: #d32f2f;
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
     color: #fff;
-    padding: 10px 20px;
+    background-color: #d32f2f;
     border: none;
-    cursor: pointer;
-    font-size: 1em;
-    margin-top: 20px;
     border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .about .cta:hover {
     background-color: #ffcc00;
     color: #d32f2f;
 }
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Products Section */
 .products {

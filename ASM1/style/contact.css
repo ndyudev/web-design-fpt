@@ -2,13 +2,12 @@ body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     color: #333;
-    background-color: #fcefe2; /* Tông màu sáng ấm áp */
+    background-color: #fcefe2;
 }
 
 /* Header */
 .header {
-    background-color: #d32f2f; /* Màu đỏ chủ đạo */
-    color: #fff;
+    background-color: #d32f2f;
 }
 
 .navbar {
@@ -37,7 +36,7 @@ body {
 }
 
 .menu li a:hover {
-    background-color: #ffcc00; /* Màu vàng Tết */
+    background-color: #ffcc00;
     color: #d32f2f;
 }
 
@@ -73,7 +72,7 @@ body {
     max-width: 100%;
     overflow: hidden;
     text-align: center;
-    background-color: #ffd54f; /* Màu vàng đậm */
+    background-color: #ffd54f;
 }
 
 .banner-img {
@@ -85,7 +84,7 @@ body {
 .about {
     text-align: center;
     padding: 40px 20px;
-    background-color: #fff8e1; /* Nền vàng nhạt */
+    background-color: #fff8e1;
 }
 
 .about h1 {
@@ -115,70 +114,127 @@ body {
     color: #d32f2f;
 }
 
-/* Products Section */
-.products {
+.contact {
     padding: 40px 20px;
-    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.contact h2 {
     text-align: center;
-}
-
-.products h2 {
-    color: #d32f2f;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.product-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.product-item {
-    border: 2px solid #ffcc00;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #fff8e1;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.product-item img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.product-item h3 {
-    color: #d32f2f;
-    font-size: 1.5em;
+    font-size: 32px;
     margin-bottom: 10px;
+    color: #333;
 }
 
-.product-item p {
-    font-size: 1em;
+.contact p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    flex: 2;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.form-group {
     margin-bottom: 15px;
 }
 
-.product-item button {
-    background-color: #d32f2f;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 5px;
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
 }
 
-.product-item button:hover {
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.submit-btn {
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
     background-color: #ffcc00;
     color: #d32f2f;
 }
+
 
 /* Footer */
 .footer {
@@ -216,7 +272,7 @@ body {
 .contact {
     padding: 40px 20px;
     text-align: center;
-    background-color: #fff8e1; /* Nền vàng nhạt */
+    background-color: #fff8e1;
 }
 
 .contact h2 {
@@ -264,6 +320,7 @@ body {
 }
 
 .contact-form button {
+    margin-right: 25px;
     background-color: #d32f2f;
     color: #fff;
     padding: 10px 20px;

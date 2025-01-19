@@ -2,12 +2,12 @@ body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     color: #333;
-    background-color: #fcefe2;
+    background-color: #fcefe2; /* Tông màu sáng ấm áp */
 }
 
 /* Header */
 .header {
-    background-color: #d32f2f;
+    background-color: #d32f2f; /* Màu đỏ chủ đạo */
     color: #fff;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 .menu li a:hover {
-    background-color: #ffcc00;
+    background-color: #ffcc00; /* Màu vàng Tết */
     color: #d32f2f;
 }
 
@@ -73,12 +73,46 @@ body {
     max-width: 100%;
     overflow: hidden;
     text-align: center;
-    background-color: #ffd54f;
+    background-color: #ffd54f; /* Màu vàng đậm */
 }
 
 .banner-img {
     max-width: 100%;
     height: auto;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff8e1; /* Nền vàng nhạt */
+}
+
+.about h1 {
+    color: #d32f2f;
+    font-size: 2.5em;
+}
+
+.about p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.about .cta {
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.about .cta:hover {
+    background-color: #ffcc00;
+    color: #d32f2f;
 }
 
 /* Products Section */
@@ -176,4 +210,65 @@ body {
 
 .footer .subnav ul li a:hover {
     text-decoration: underline;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff8e1; /* Nền vàng nhạt */
+}
+
+.contact h2 {
+    color: #d32f2f;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 25px;
 }

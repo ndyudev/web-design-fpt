@@ -2,12 +2,12 @@ body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     color: #333;
-    background-color: #fcefe2;
+    background-color: #fcefe2; /* Tông màu sáng ấm áp */
 }
 
 /* Header */
 .header {
-    background-color: #d32f2f;
+    background-color: #d32f2f; /* Màu đỏ chủ đạo */
     color: #fff;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 .menu li a:hover {
-    background-color: #ffcc00;
+    background-color: #ffcc00; /* Màu vàng Tết */
     color: #d32f2f;
 }
 
@@ -73,12 +73,46 @@ body {
     max-width: 100%;
     overflow: hidden;
     text-align: center;
-    background-color: #ffd54f;
+    background-color: #ffd54f; /* Màu vàng đậm */
 }
 
 .banner-img {
     max-width: 100%;
     height: auto;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff8e1; /* Nền vàng nhạt */
+}
+
+.about h1 {
+    color: #d32f2f;
+    font-size: 2.5em;
+}
+
+.about p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.about .cta {
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.about .cta:hover {
+    background-color: #ffcc00;
+    color: #d32f2f;
 }
 
 /* Products Section */
@@ -176,4 +210,37 @@ body {
 
 .footer .subnav ul li a:hover {
     text-decoration: underline;
+}
+
+/* ... (CSS cho các phần khác) ... */
+
+.about .container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .col-md-6 {
+    flex: 1;
+}
+
+.team .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }

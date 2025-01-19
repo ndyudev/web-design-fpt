@@ -1,48 +1,72 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPhone 14 Pro</title>
-    <!-- Liên kết đến file CSS -->
-    <link rel="stylesheet" href="/ASM1/style/products.css">
+    <title>Home | DSV Shop</title>
+    <link rel="stylesheet" href="/ASM1/style/style.css">
     <link rel="icon" href="/ASM1/img/DSVShop/LogoDSV.png">
 </head>
 <body>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li class="has-submenu">
+                        <a href="products.html">Products</a>
+                        <ul class="submenu">
+                            <li><a href="#laptop">Laptop</a></li>
+                            <li><a href="#iphone">iPhone</a></li>
+                            <li><a href="#accessory">Phụ kiện</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="slider">
+                <img src="/ASM1/img/DSVShop/banner.dsvshop.png" alt="Banner" class="banner-img">
+            </div>
+        </header>
+        <!-- PRODUCTS SECTION -->
+        <section id="products" class="products">
+            <h2>Sản phẩm</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="/ASM1/img/product/iphone-16-pro-max-titan-sa-mac.jpg" alt="Laptop">
+                    <h3>Laptop</h3>
+                    <p>High-performance laptops for work, gaming, and creativity.</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="/ASM1/img/product/pc.jpg" alt="iPhone">
+                    <h3>iPhone</h3>
+                    <p>Discover the latest innovations from Apple.</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="/ASM1/img/product/vi-vn-lenovo-loq-15iax9-i5-83gs00d9vn-sliders-1.jpg" alt="Accessories">
+                    <h3>Accessories</h3>
+                    <p>Enhance your tech experience with premium accessories.</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </section>
 
-<header>
-    <h1>Thông Tin Sản Phẩm iPhone 14 Pro</h1>
-</header>
-
-<!-- Phần thông tin sản phẩm -->
-<div class="container">
-    <!-- Hình ảnh sản phẩm -->
-    <img src="/ASM1/img/product/pc.jpg" alt="iPhone 14 Pro">
-
-    <!-- Thông tin sản phẩm -->
-    <div class="content">
-        <h2>iPhone 14 Pro</h2>
-        <p><strong>Thương hiệu:</strong> Apple</p>
-        <p><strong>Mô tả:</strong> iPhone 14 Pro là chiếc điện thoại cao cấp với màn hình đẹp, camera cực chất và hiệu năng mạnh mẽ.</p>
-        
-        <h3>Thông số kỹ thuật:</h3>
-        <ul>
-            <li>Màn hình: 6.1 inch Super Retina XDR OLED</li>
-            <li>Camera: 48MP (Camera chính), 12MP (Camera siêu rộng), 12MP (Camera telephoto)</li>
-            <li>Pin: Khoảng 23 giờ xem video</li>
-            <li>CPU: A16 Bionic</li>
-            <li>RAM: 6GB</li>
-            <li>ROM: 128GB, 256GB, 512GB, 1TB</li>
-        </ul>
-
-        <h3 style="color: red;">Giá: 19.990.000 VND</h3>
-
-        <div>
-            <button class="buy-now"><a href="http://127.0.0.1:5500/ASM1/html/home.html">Mua Ngay</a></button>
-            <button class="add-to-cart">Thêm vào giỏ hàng</button>
-        </div>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="subnav">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <p>&copy; 2025 DSV Shop. All rights reserved.</p>
+        </footer>
     </div>
-</div>
-
 </body>
 </html>

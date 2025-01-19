@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "/ASM1/html/index.html",
+        "src": "ASM1/**/*",
         "use": "@vercel/static"
       }
     ]

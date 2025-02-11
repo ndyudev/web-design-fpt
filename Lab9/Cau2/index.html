@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="submit.php" method="post" enctype="multipart/form-data">
+            <h2>Đăng Ký</h2>
+
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label>Giới tính:</label>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="Nam" checked>
+                <label for="male">Nam</label>
+
+                <input type="radio" id="female" name="gender" value="Nữ">
+                <label for="female">Nữ</label>
+            </div>
+
+            <label for="avatar">Hình ảnh:</label>
+            <input type="file" id="avatar" name="avatar">
+
+            <label for="country">Quốc tịch:</label>
+            <select id="country" name="country">
+                <option value="Vietnam" selected>Việt Nam</option>
+                <option value="USA">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="Japan">Japan</option>
+            </select>
+
+            <label>Sở thích:</label>
+            <div class="hobbies">
+                <input type="checkbox" id="sport" name="hobby" value="Thể thao">
+                <label for="sport">Thể thao</label>
+
+                <input type="checkbox" id="travel" name="hobby" value="Du lịch" checked>
+                <label for="travel">Du lịch</label>
+
+                <input type="checkbox" id="music" name="hobby" value="Âm nhạc">
+                <label for="music">Âm nhạc</label>
+
+                <input type="checkbox" id="food" name="hobby" value="Ẩm thực">
+                <label for="food">Ẩm thực</label>
+            </div>
+
+            <label for="notes">Ghi chú:</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+
+            <div class="buttons">
+                <button type="submit">Đăng ký</button>
+                <button type="reset">Nhập lại</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

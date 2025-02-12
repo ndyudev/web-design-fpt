@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10 Cau 2</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <form>
+        <div class="form-group">
+            <label for="name">Họ và Tên:</label>
+            <input type="text" id="name" name="name" class="form-control">
+        </div>
+
+        <fieldset>
+            <legend>Giới tính:</legend>
+            <input type="radio" id="male" name="gender" value="Nam">
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female">Nữ</label>
+        </fieldset>
+
+        <div class="form-group">
+            <label for="dob">Ngày sinh:</label>
+            <input type="date" id="dob" name="dob" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="score">Điểm:</label>
+            <input type="number" id="score" name="score" class="form-control" min="0" max="10" step="0.25">
+        </div>
+
+        <div class="form-group">
+            <label for="job">Nghề nghiệp:</label>
+            <input list="jobs" id="job" name="job" class="form-control">
+            <datalist id="jobs">
+                <option value="Sinh viên">
+                <option value="Giáo viên">
+                <option value="Lập trình viên">
+                <option value="Bác sĩ">
+                <option value="Kỹ sư">
+            </datalist>
+        </div>
+
+        <fieldset>
+            <legend>Sở thích:</legend>
+            <input type="checkbox" id="sport" name="hobby" value="Thể thao">
+            <label for="sport">Thể thao</label>
+            <input type="checkbox" id="travel" name="hobby" value="Du lịch">
+            <label for="travel">Du lịch</label>
+            <input type="checkbox" id="music" name="hobby" value="Âm nhạc">
+            <label for="music">Âm nhạc</label>
+            <input type="checkbox" id="food" name="hobby" value="Ẩm thực">
+            <label for="food">Ẩm thực</label>
+        </fieldset>
+
+        <div class="form-group">
+            <label for="note">Ghi chú:</label>
+            <textarea id="note" name="note" class="form-control" rows="4"></textarea>
+        </div>
+
+        <div class="btn-group">
+            <button type="submit" class="form-button btn-submit">Đăng ký</button>
+            <button type="reset" class="form-button btn-reset">Nhập lại</button>
+        </div>
+    </form>
+
+</body>
+</html>

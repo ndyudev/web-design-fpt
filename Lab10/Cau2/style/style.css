@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #fff7e6;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 98%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+input[type="number"] {
+    background-color: yellow;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.btn-group {
+    margin-top: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    background-color: red;
+}
+
+.btn-reset {
+    background-color: blue;
+}

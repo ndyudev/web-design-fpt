@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <form>
+        <div class="form-group">
+            <label for="name">Họ và Tên:</label>
+            <input type="text" id="name" name="name" class="form-control" tabindex="1">
+        </div>
+
+        <div class="form-group">
+            <label for="country">Quốc tịch:</label>
+            <input type="text" id="country" name="country" class="form-control" value="Việt Nam" readonly tabindex="2">
+        </div>
+
+        <div class="form-group">
+            <label for="note">Ghi chú:</label>
+            <textarea id="note" name="note" class="form-control" rows="4" tabindex="3"></textarea>
+        </div>
+
+        <hr>
+
+        <div class="form-group">
+            <label>Các nút:</label>
+            <div class="btn-group">
+                <button type="button" class="form-button btn-add" tabindex="4">Thêm</button>
+                <button type="button" class="form-button btn-edit" tabindex="5">Sửa</button>
+                <button type="button" class="form-button btn-delete" disabled tabindex="6">Xóa</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

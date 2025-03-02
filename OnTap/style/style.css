@@ -2,66 +2,104 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body {
+ }
+ 
+ body {
     margin: 0 5%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
-    text-align: center;
-}
-
-.menu {
+    font-size: 22px;
+ }
+ 
+ .menu {
+    padding: 10px 0;
     display: flex;
-    height: 100px;
-    width: 100% auto;
     align-items: center;
-}
-
-.menu .logo {
-    width: 300px;
-}
-
-.menu .logo img {
-    width: 100px;
-    height: auto;
-}
-
-.nav ul li {
-    display: inline-block;
+ }
+ 
+ .logo {
+    width: 250px;
+ }
+ 
+ nav ul {
     list-style: none;
-}
-
-.nav ul li a {
-    text-decoration: none;
+ }
+ 
+ nav ul li {
+    display: inline;
     padding: 0 15px;
-    font-size: 20px;
-    color: black;
-}
-
-.nav ul li a:hover {
-    color: aqua;
-}
-
-.catalog {
-    align-items: center;
+ }
+ 
+ nav ul li a {
+    text-decoration: none;
+    color: #333;
+ }
+ 
+ .catalog {
+    margin: 50px 0;
     display: flex;
-    padding: 40 0px;
-}
-
-.catalog img {
-    padding: 20px;
-}
-
-
-.catalog img:hover {
-    transform: scale(1.1);
-}
-.catalog p {
-    color: blue;
-}
-
-
-
+    justify-content: space-between;
+    text-align: center;
+ }
+ 
+ .products {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+ }
+ 
+ .product-item {
+    border: 1px solid #bbb;
+ }
+ 
+ .img-thumb {
+    position: relative;
+ }
+ .img-thumb img {
+    width: 100%;
+    max-width: 100%;
+ }
+ 
+ .img-gift {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+ }
+ .img-gift img {
+    width: 50px;
+ }
+ 
+ .product-info a {
+    text-decoration: none;
+    color: purple; /* Thêm màu chữ cho tên sản phẩm */
+ }
+ 
+ .product-info .price span {
+    border-bottom: 2px solid orange;
+ }
+ 
+ .product-info p,
+ .product-info button {
+    margin: 6px 0;
+ }
+ 
+ .product-info button {
+    padding: 6px 15px;
+    cursor: pointer;
+    background-color: #f0f0f0; /* Thêm màu nền cho nút */
+    border: none;
+    border-radius: 4px; /* Bo góc nút */
+ }
+ 
+ .product-info button:hover {
+    background-color: yellowgreen;
+    transition: background-color 0.3s ease; /* Hiệu ứng mượt mà */
+ }
+ 
+ .product-item:hover {
+    border: 2px solid yellowgreen;
+    transition: border 0.3s ease; /* Hiệu ứng mượt mà */
+ }
+ 
+ .product-item:hover button {
+    background-color: yellowgreen;
+ }

@@ -1,54 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>On Tap</title>
-    <link rel="stylesheet" href="./style/style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Shop</title>
+   <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="menu">
-            <div class="logo">
-                <img src="./img/logo.png" alt="">
-            </div>
-            <div class="nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-            
-        <div class="catalog">
-            <div>
-                <img src="./img/cat-01.png" alt="catalog1">
-                <p>Catalog 1</p>
-            </div>
-            <div>
-                <img src="./img/cat-02.png" alt="catalog1">
-                <p>Catalog 2</p>
-            </div>
-            <div>
-                <img src="./img/cat-03.png" alt="catalog1">
-                <p>Catalog 3</p>
-            </div>
-            <div>
-                <img src="./img/cat-04.png" alt="catalog1">
-                <p>Catalog 4</p>
-            </div>
-            <div>
-                <img src="./img/cat-05.png" alt="catalog1">
-                <p>Catalog 5</p>
-            </div>
-        </div>
+   <div>
+      <!-- header -->
+      <div class="menu">
+         <div class="logo">
+            <img src="img/logo.png" width="150px" alt="Logo của cửa hàng">
+         </div>
+         <div>
+            <nav>
+               <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="shop.html">SHOP</a></li>
+                  <li><a href="products.html">PRODUCTS</a></li>
+                  <li><a href="blog.html">BLOG</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
 
-        <div class="product">
-            <div></div>
-        </div>
-    </div>
+      <!-- catalog -->
+      <div class="catalog">
+         <div>
+            <img src="img/cat-01.png" alt="Hình ảnh Catalog 1">
+            <p>Catalog 1</p>
+         </div>
+         <div>
+            <img src="img/cat-02.png" alt="Hình ảnh Catalog 2">
+            <p>Catalog 2</p>
+         </div>
+         <div>
+            <img src="img/cat-03.png" alt="Hình ảnh Catalog 3">
+            <p>Catalog 3</p>
+         </div>
+         <div>
+            <img src="img/cat-04.png" alt="Hình ảnh Catalog 4">
+            <p>Catalog 4</p>
+         </div>
+         <div>
+            <img src="img/cat-05.png" alt="Hình ảnh Catalog 5">
+            <p>Catalog 5</p>
+         </div>
+      </div>
+
+      <!-- products list -->
+      <div class="products">
+         <div class="product-item">
+            <div class="product-thumb">
+               <div class="img-thumb"><a href="product-detail.html"><img src="img/product-01.jpg" alt="Hình ảnh sản phẩm 1"></a>
+                  <div class="img-gift"><img src="img/gift.png" alt="Gift icon"></div>
+                
+               </div>
+            </div>
+            <div class="product-info">
+               <p class="name"><a href="product-detail.html">product name 1</a></p>
+               <p class="price"><span>$112.00</span></p>
+               <button type="submit">Add to cart</button>
+            </div>
+         </div>
+         <div class="product-item">
+            <div class="product-thumb">
+               <div class="img-thumb"><a href="product-detail.html"><img src="img/product-02.jpg" alt="Hình ảnh sản phẩm 2"></a>
+                  <!-- <div class="img-gift"><img src="img/gift.png" alt=""></div> -->
+               </div>
+            </div>
+            <div class="product-info">
+               <p class="name"><a href="product-detail.html">product name 2</a></p>
+               <p class="price"><span>$112.00</span></p>
+               <button type="submit">Add to cart</button>
+            </div>
+         </div>
+         <div class="product-item">
+            <div class="product-thumb">
+               <div class="img-thumb"><a href="product-detail.html"><img src="img/product-03.jpg" alt="Hình ảnh sản phẩm 3"></a>
+                  <!-- <div class="img-gift"><img src="img/gift.png" alt=""></div> -->
+               </div>
+            </div>
+            <div class="product-info">
+               <p class="name"><a href="product-detail.html">product name 3</a></p>
+               <p class="price"><span>$112.00</span></p>
+               <button type="submit">Add to cart</button>
+            </div>
+         </div>
+         <div class="product-item">
+            <div class="product-thumb">
+               <div class="img-thumb"><a href="product-detail.html"><img src="img/product-04.jpg" alt="Hình ảnh sản phẩm 4"></a>
+                  <div class="img-gift"><img src="img/gift.png" alt="Gift icon"></div>
+                
+               </div>
+            </div>
+            <div class="product-info">
+               <p class="name"><a href="product-detail.html">product name 4</a></p>
+               <p class="price"><span>$112.00</span></p>
+               <button type="submit">Add to cart</button>
+            </div>
+         </div>
+      </div>
+   </div>
 </body>
 </html>

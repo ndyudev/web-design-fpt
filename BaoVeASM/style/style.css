@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    color: #333;
+ }
+ .container {
+    width: 100%;
+ }
+ .menu {
+    padding: 20px 0;
+    border-bottom: 2px solid #1e90ff;
+    display: flex;
+    align-items: center;
+ }
+
+ .logo h1 {
+    color: black;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    margin: 0;
+    margin-right: 240px;
+ }
+ 
+ .logo h1 .c {
+    display: inline;
+    background-color: #ff4500;
+    padding: 5px 5px;
+    border-radius: 5px;
+    color: #fff;
+ }
+ 
+ .logo h1 .store {
+    color: #1e90ff;
+ }
+ 
+ .nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+ }
+ .nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+ }
+ .nav-list li a:hover {
+    color: #ff4500;
+ }
+ .promotions {
+    margin: 40px 0;
+ }
+ .promotions h2 {
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #ff4500;
+    margin-bottom: 30px;
+ }
+ .products {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+ }
+ .product-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 23%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #fff;
+ }
+
+ .product-item:hover {
+    border: #1e90ff solid 1px;
+ }
+ .product-thumb {
+    position: relative;
+ }
+ .product-thumb img {
+    width: 100%;
+    height: auto;
+ }
+ .offer-badge {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+ }
+ .offer-badge img {
+    width: 50px;
+    height: auto;
+ }
+ .product-info {
+    padding: 15px;
+    text-align: center;
+ }
+ .product-info h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #888;
+    text-align: left;
+    font-weight: lighter;
+ }
+ .price {
+    margin-bottom: 15px;
+    text-align: left;
+ }
+ .original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 10px;
+ }
+ .discount-price {
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: right;
+ }
+ button {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-transform: uppercase;
+ }
+ button:hover {
+    background-color: #1e90ff;
+ }
